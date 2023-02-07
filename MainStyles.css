@@ -1,0 +1,85 @@
+.body{
+    margin: 0px;
+}
+.TitleWrap{
+    background-color: grey;
+}
+
+.MainImage {
+    display:inline-block;
+    position: relative;
+    margin-left: 20px;
+    background-color: aqua;
+}
+
+.ImageWrapper{
+    position: relative;
+}
+.Description{
+    display: inline;
+    font-size: 20px;
+    position:absolute;
+    margin-top: -140px;
+    margin-left: 20px;
+}
+.HeadInst{
+    font-size: 20px;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 20px;
+}
+.inst{
+    font-size: 15px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.price-tag{
+    color: rgb(110, 110, 110);
+}
+.price{
+    color: rgb(228, 151, 8);
+}
+.ImageShown-Black{
+    width: 200px;
+    height: 200px;
+    display: inline;
+        position: absolute;
+        bottom: 5px;
+        left: 340px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s;
+        transform:rotate(-40px);
+        z-index: 100;
+}
+
+.ImageShown-Blue {
+    width: 200px;
+    height: 200px;
+    display: inline;
+    position: absolute;
+    bottom: 5px;
+    left: 340px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
+    z-index: 100;
+}
+
+
+.ImageWrap-Black{
+    display: inline;
+
+}
+
+.ImageWrap-Black:hover .ImageShown-Black{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.ImageWrap-Blue:hover .ImageShown-Blue{
+   visibility: visible;
+   opacity: 1;
+}
